@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #b22222;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color: #111827;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fraunces", sans-serif;
+}
+p, input, button{
+    font-family: "Catamaran", sans-serif;
+}
+body{
+    background-color: #f1f1f1;
+    color: #111827;
+}
+.header{
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+.header .logo h2 span{
+    color: var(--primary-color);
+}
+.header .navbar{
+   opacity:0;
+   height: 0;
+}
+//displays navbar using .open
+.header .navbar.open{
+    opacity:1;
+    height: 100px;
+}
+.header .book-now-btn{
+    display:none;
+}
+.header .menu-btn{
+    font-size: 30px;
+}
